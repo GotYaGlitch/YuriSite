@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ContextMotion</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="./images/photo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-container">
+      <a href="#" style="text-decoration: none;" class="scroll-link">
+        <div class="logo">
+          <img src="./images/photo.png" alt="logo" style="height: 32px; width: auto; vertical-align: middle; margin-right: 10px;">
+          <span>ContextMotion</span>
+        </div>
+      </a>
+
+      <!-- Кнопка бургер-меню -->
+      <button class="burger-btn" aria-label="Открыть меню">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </button>
+
+      <nav class="nav" aria-label="Основная навигация">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#about-platform" class="nav-link">О проекте</a></li>
+          <li class="nav-item"><a href="#for-whom" class="nav-link">Для кого</a></li>
+          <li class="nav-item"><a href="#directions" class="nav-link">Направления</a></li>
+          <li class="nav-item"><a href="#about-us" class="nav-link">О нас</a></li>
+          <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Контакты</a></li>
+          <li class="nav-item"><a href="https://t.me/dr_yuryharlamov" class="nav-link cta">Записаться</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO-БЛОК НА ВСЮ ШИРИНУ -->
+  <section class="hero-section">
+    <div class="hero-container">
+      <div class="hero-content">
+        <img src="./images/CM_NEW_white.png" alt="ContextMotion logo" class="hero-logo">
+        <h1 class="hero-title">двигайся со смыслом</h1>
+        <p class="hero-subtitle">образовательная платформа для понимания движения и работы с телом</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- О ПРОЕКТЕ -->
+  <section id="about-platform" class="about-platform-section">
+    <div class="about-platform-container">
+      <div class="platform-hero">
+        <div class="platform-text animate-left">
+          <div class="platform-text-inner">
+            <h2>О платформе</h2>
+            <div class="platform-divider"></div>
+            <p class="about-platform-description">
+              ContextMotion — это образовательная платформа, которая помогает выстраивать системное понимание того, как устроено и как движется тело человека. Проект ориентирован на профессионалов, работающих с телом, и на людей, которые хотят лучше разобраться в работе собственного тела.
+            </p>
+          </div>
+        </div>
+        <div class="platform-image animate-right">
+          <img src="./images/IMG_9885.jpg" alt="ContextMotion платформа">
+        </div>
+      </div>
+
+      <div class="advantages-grid">
+        <h3 class="advantages-title">Преимущества использования платформы</h3>
+        <p class="advantages-subtitle">
+          Платформа ContextMotion позволяет профессионалам увидеть пациента целостно, а любителям фитнеса — понять, как работает тело в движении.
+        </p>
+
+        <div class="advantages-list">
+          <div class="advantage-item">
+            <div class="advantage-content">
+              <h4>Междисциплинарный подход</h4>
+              <p>Объединение знаний анатомии, биомеханики и реабилитационной логики для комплексного понимания движения.</p>
+            </div>
+          </div>
+
+          <div class="advantage-item">
+            <div class="advantage-content">
+              <h4>Практическая применимость</h4>
+              <p>Методы и инструменты, которые можно легко внедрить в повседневную практику специалистов и тренировочный процесс любителей фитнеса.</p>
+            </div>
+          </div>
+
+          <div class="advantage-item">
+            <div class="advantage-content">
+              <h4>Воспроизводимость</h4>
+              <p>Методы описаны с чёткими критериями оценки и понятными маркерами изменений для их применения и проверки в реальной практике.</p>
+            </div>
+          </div>
+
+          <div class="advantage-item">
+            <div class="advantage-content">
+              <h4>Доказательная ориентированность</h4>
+              <p>Использование общепринятой терминологии и профессиональных стандартов для повышения прозрачности и предсказуемости работы.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-carousel">
+        <div class="carousel-track" id="carouselTrack">
+          <!-- Слайд 1 -->
+          <div class="carousel-slide">
+            <div class="carousel-image" style="background-image: url('./images/classroom.jpg');">
+              <div class="carousel-overlay">
+                <div class="carousel-content">
+                  <h4>Комфортная аудитория для занятий</h4>
+                  <p>Все необходимое для учебы и практики</p>
+                  <a href="#contact" class="cta-button">Записаться</a>
+                </div>
+              </div>
+            </div>
+          </div>
+            
+            <!-- Слайд 2 -->
+          <div class="carousel-slide">
+            <div class="carousel-image" style="background-image: url('./images/Coffee.jpeg');">
+              <div class="carousel-overlay">
+                <div class="carousel-content">
+                  <h4>Кофе-брейк и горячие обеды</h4>
+                  <p>На каждом семинаре. Включено в стоимость.</p>
+                  <a href="#contact" class="cta-button">Записаться</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Кнопки навигации -->
+        <button class="carousel-btn carousel-btn--prev" id="carouselPrev">‹</button>
+        <button class="carousel-btn carousel-btn--next" id="carouselNext">›</button>
+        <!-- Индикаторы -->
+        <div class="carousel-dots" id="carouselDots">
+          <span class="dot active" data-index="0"></span>
+          <span class="dot" data-index="1"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="content">
+    <!-- ДЛЯ КОГО -->
+    <section id="for-whom" class="for-whom-section">
+      <div class="for-whom-container">
+        <h2 class="for-whom-title">Для кого</h2>
+        <p class="for-whom-subtitle">
+          Платформа ContextMotion создана для двух ключевых аудиторий — профессионалов и людей, которые хотят лучше понять своё тело.
+        </p>
+
+        <div class="for-whom-grid">
+          <!-- Для профессионалов -->
+          <div class="for-whom-card">
+            <div class="for-whom-card-header">
+              <h3>Для профессионалов</h3>
+            </div>
+            <div class="for-whom-card-body">
+              <p class="for-whom-desc">
+                Платформа даёт возможность выйти за рамки привычных шаблонов и увидеть пациента более целостно.
+              </p>
+              <ul class="for-whom-list">
+                <li class="for-whom-item">Целостный взгляд на пациента — выход за рамки привычных шаблонов и протоколов</li>
+                <li class="for-whom-item">Междисциплинарное мышление — интеграция знаний анатомии, биомеханики и реабилитации</li>
+                <li class="for-whom-item">Понимание биомеханических закономерностей — системный подход к движению</li>
+                <li class="for-whom-item">Расширение диагностического инструментария — новые методы оценки состояния пациента</li>
+                <li class="for-whom-item">Работа с контекстом движения — учёт индивидуальных особенностей и среды</li>
+                <li class="for-whom-item">Эффективная коммуникация — объяснение сложных терминов простым языком</li>
+                <li class="for-whom-item">Интеграция различных подходов — без противопоставления профессиональных школ</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Для интересующихся здоровьем -->
+          <div class="for-whom-card">
+            <div class="for-whom-card-header">
+              <h3>Для интересующихся здоровьем</h3>
+            </div>
+            <div class="for-whom-card-body">
+              <p class="for-whom-desc">
+                Проект помогает сформировать базовое понимание того, как тело работает в движении, научиться чувствовать собственные ограничения и подбирать нагрузку с учётом индивидуальных особенностей.
+              </p>
+              <ul class="for-whom-list">
+                <li class="for-whom-item">Базовое понимание работы тела — как устроено и как движется</li>
+                <li class="for-whom-item">Осознанное движение — как чувствовать собственные ограничения</li>
+                <li class="for-whom-item">Индивидуальный подбор нагрузки — с учётом особенностей тела</li>
+                <li class="for-whom-item">Профилактика травм — понимание безопасных движений</li>
+                <li class="for-whom-item">Связь ощущений и биомеханики — как чувствовать то, что происходит в теле</li>
+                <li class="for-whom-item">Уверенность в движениях — понимание, что и почему работает</li>
+                <li class="for-whom-item">Интеграция с образом жизни — как внедрить знания в повседневность</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- НАПРАВЛЕНИЯ -->
+    <section id="directions" class="directions-section">
+      <div class="directions-container">
+        <h2 class="directions-title">Направления</h2>
+        <p class="directions-subtitle">Три ключевых направления для глубокого понимания тела и движения</p>
+
+        <div class="directions-grid">
+          <div class="direction-card direction-card">
+            <div class="direction-card-inner">
+              <h3 class="direction-title">Контекстная биомеханика</h3>
+              <p class="direction-description">
+                Направление помогает научиться анализировать движение в реальных условиях и соотносить его с анатомическими возможностями тела.
+              </p>
+              <button class="direction-btn" data-modal="modal-1">Подробнее →</button>
+            </div>
+          </div>
+
+          <div class="direction-card direction-card">
+            <div class="direction-card-inner">
+              <h3 class="direction-title">Топографическая анатомия</h3>
+              <p class="direction-description">
+                Это комбинированная система обучения, которая формирует пространственное мышление и навыки визуализации анатомических структур в динамике.
+              </p>
+              <button class="direction-btn" data-modal="modal-2">Подробнее →</button>
+            </div>
+          </div>
+
+          <div class="direction-card direction-card">
+            <div class="direction-card-inner">
+              <h3 class="direction-title">Цикл обучающих семинаров по мануальной терапии</h3>
+              <p class="direction-description">
+                Направление адресовано специалистам, применяющим ручные методы работы с пациентом.
+              </p>
+              <button class="direction-btn" data-modal="modal-3">Подробнее →</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Модальное окно 1 -->
+    <div id="modal-1" class="modal">
+      <div class="modal-overlay">
+        <div class="modal-content">
+          <button class="modal-close">&times;</button>
+          <div class="modal-wrapper">
+            <div class="modal-image">
+              <img src="./images/biomechanics.jpg" alt="Контекстная биомеханика">
+            </div>
+            <div class="modal-text">
+              <h3>Контекстная биомеханика</h3>
+              <p>Контекстная биомеханика — это подход, который рассматривает движение человека не изолированно, а в контексте его повседневной деятельности, профессиональных задач и индивидуальных особенностей.</p>
+              <p>На курсе вы узнаете:</p>
+              <ul>
+                <li>Как анализировать движение в различных контекстах</li>
+                <li>Влияние внешних факторов на биомеханику тела</li>
+                <li>Методы коррекции движений в повседневной жизни</li>
+                <li>Индивидуальный подход к биомеханическому анализу</li>
+                <li>Практические навыки оценки движения</li>
+                <li>Работу с компенсаторными стратегиями</li>
+              </ul>
+              <p>Этот курс подходит как для начинающих специалистов, так и для опытных практиков, желающих углубить свои знания в области биомеханики.</p>
+              <a href="#contact" class="modal-cta">Записаться на курс</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Модальное окно 2 -->
+    <div id="modal-2" class="modal">
+      <div class="modal-overlay">
+        <div class="modal-content">
+          <button class="modal-close">&times;</button>
+          <div class="modal-wrapper">
+            <div class="modal-image">
+              <img src="./images/anatomy.jpg" alt="Топографическая анатомия">
+            </div>
+            <div class="modal-text">
+              <h3>Топографическая анатомия</h3>
+              <p>Топографическая анатомия — это изучение взаимного расположения органов и тканей. Понимание топографии необходимо для точной диагностики и эффективного воздействия на тело.</p>
+              <p>В программе курса:</p>
+              <ul>
+                <li>Послойное строение областей тела</li>
+                <li>Топография мышц, сосудов и нервов</li>
+                <li>Клинически значимые анатомические структуры</li>
+                <li>Практические навыки пальпации</li>
+                <li>Визуализация анатомических структур в динамике</li>
+                <li>Пространственное мышление и ориентация в теле</li>
+              </ul>
+              <p>Курс построен на сочетании теоретических знаний и практических навыков, что позволяет сформировать глубокое понимание анатомии.</p>
+              <a href="#contact" class="modal-cta">Записаться на курс</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Модальное окно 3 -->
+    <div id="modal-3" class="modal">
+      <div class="modal-overlay">
+        <div class="modal-content">
+          <button class="modal-close">&times;</button>
+          <div class="modal-wrapper">
+            <div class="modal-image">
+              <img src="./images/therapy.jpg" alt="Семинары по мануальной терапии">
+            </div>
+            <div class="modal-text">
+              <h3>Цикл обучающих семинаров по мануальной терапии</h3>
+              <p>Семинары по мануальной терапии — это практико-ориентированное обучение, направленное на освоение эффективных техник работы с телом.</p>
+              <p>Что вы получите на семинаре:</p>
+              <ul>
+                <li>Освоение базовых и продвинутых мануальных техник</li>
+                <li>Работа с мышечным тонусом и фасциями</li>
+                <li>Техники мобилизации суставов</li>
+                <li>Практика под наблюдением опытного инструктора</li>
+                <li>Разбор клинических случаев</li>
+                <li>Индивидуальная обратная связь по технике</li>
+              </ul>
+              <p>Семинары подходят для специалистов с любым уровнем подготовки — от начинающих до практикующих специалистов, желающих расширить свой арсенал техник.</p>
+              <a href="#contact" class="modal-cta">Записаться на семинар</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- О НАС -->
+    <section id="about-us" class="about-us-section">
+      <div class="about-us-container">
+        <h2 class="about-us-title">О нас</h2>
+        
+        <!-- Часть 1: Автор -->
+        <div class="about-author">
+          <div class="author-image">
+            <img src="./images/IMG_7264__2.jpeg" alt="Автор проекта">
+          </div>
+          <div class="author-info">
+            <h3>Автор проекта</h3>
+            <p class="author-name">Харламов Юрий Дмитриевич</p>
+            <p class="author-desc">
+              Врач-реабилитолог, кинезиолог, специалист ЛФК, АФК, тренер и судья ФТСАРР по танцевальному спорту, тренер по общей и специальной физической подготовке. Преподаватель Академии медицинской кинезиологии и мануальной терапии профессора Л.Ф. Васильевой
+            </p>
+          </div>
+        </div>
+
+        <!-- Часть 2: Карусель -->
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="faq-section">
+      <div class="faq-container">
+        <h2 class="faq-title">FAQ</h2>
+        <p class="faq-subtitle">Ответы на частые вопросы</p>
+
+        <div class="faq-list">
+          <!-- Вопрос 1 -->
+          <div class="faq-item">
+            <div class="faq-question">
+              <span class="faq-number">01</span>
+              <h3>Что такое CONTEXTMOTION?</h3>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>CONTEXTMOTION — комплексная обучающая система, объединяющая контекстную биомеханику, топографическую анатомию и практику фитнеса в реабилитации. Она даёт фундаментальное понимание движения и учит применять знания на практике в спорте, фитнесе и реабилитации.</p>
+            </div>
+          </div>
+
+          <!-- Вопрос 2 -->
+          <div class="faq-item">
+            <div class="faq-question">
+              <span class="faq-number">02</span>
+              <h3>В чем преимущество CONTEXTMOTION?</h3>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>В отличие от узкоспециализированных курсов, CONTEXTMOTION объединяет три дисциплины в единую систему и делает акцент на реальных жизненных сценариях, а не только на спортзале или клинике.</p>
+            </div>
+          </div>
+
+          <!-- Вопрос 3 -->
+          <div class="faq-item">
+            <div class="faq-question">
+              <span class="faq-number">03</span>
+              <h3>Кому подойдёт эта система?</h3>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>Система подойдёт реабилитологам, фитнес‑тренерам, массажистам, физиотерапевтам, спортсменам, людям, восстанавливающимся после травм, и всем, кто хочет улучшить качество движений и предотвратить травмы.</p>
+            </div>
+          </div>
+
+          <!-- Вопрос 4 -->
+          <div class="faq-item">
+            <div class="faq-question">
+              <span class="faq-number">04</span>
+              <h3>Нужно ли иметь специальное образование для обучения?</h3>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>Нет, базовый курс доступен людям без профильного образования. Для углублённого изучения некоторые базовые знания будут плюсом, но не обязательны.</p>
+            </div>
+          </div>
+
+          <!-- Вопрос 5 -->
+          <div class="faq-item">
+            <div class="faq-question">
+              <span class="faq-number">05</span>
+              <h3>Какие практические навыки я получу?</h3>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>Вы научитесь анализировать движения, выявлять проблемные зоны, составлять программы коррекции и применять фитнес‑упражнения в реабилитационных целях с учётом индивидуальных особенностей.</p>
+            </div>
+          </div>
+
+          <!-- Вопрос 6 -->
+          <div class="faq-item">
+            <div class="faq-question">
+              <span class="faq-number">06</span>
+              <h3>Можно ли применять CONTEXTMOTION для самостоятельной работы?</h3>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>Да, система даёт достаточно знаний и инструментов для самостоятельного анализа движений и профилактики травм. Для сложных случаев рекомендуется консультация специалиста.</p>
+            </div>
+          </div>
+
+          <!-- Вопрос 7 -->
+          <div class="faq-item">
+            <div class="faq-question">
+              <span class="faq-number">07</span>
+              <h3>Подходит ли система для работы с разными возрастными группами?</h3>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>Да, принципы CONTEXTMOTION применимы для всех возрастов — от детей до пожилых людей. Программы адаптируются под физиологические особенности каждой группы.</p>
+            </div>
+          </div>
+
+          <!-- Вопрос 8 -->
+          <div class="faq-item">
+            <div class="faq-question">
+              <span class="faq-number">08</span>
+              <h3>Требуется ли специальное оборудование для занятий?</h3>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>Нет. Большинство упражнений и анализов можно выполнять без оборудования или с минимальным набором (коврик, эспандер, гантели). Акцент делается на качестве движения, а не на инвентаре.</p>
+            </div>
+          </div>
+
+          <!-- Вопрос 9 -->
+          <div class="faq-item">
+            <div class="faq-question">
+              <span class="faq-number">09</span>
+              <h3>Какие есть противопоказания к применению методики?</h3>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>Прямых противопоказаний к изучению системы нет — она носит обучающий характер. Однако при работе с клиентами важно учитывать ограничения, установленные лечащим врачом, в том числе:</p>
+              <ul>
+                <li>острые воспалительные процессы;</li>
+                <li>свежие травмы и переломы;</li>
+                <li>послеоперационный период (без разрешения врача);</li>
+                <li>тяжёлые неврологические нарушения;</li>
+                <li>онкологические заболевания;</li>
+                <li>иные состояния, требующие медицинского контроля.</li>
+              </ul>
+              <p>Перед применением методики в реабилитационных целях обязательна консультация специалиста.</p>
+            </div>
+          </div>
+
+          <!-- Вопрос 10 -->
+          <div class="faq-item">
+            <div class="faq-question">
+              <span class="faq-number">10</span>
+              <h3>Помогает ли система при сколиозе и других патологиях опорно‑двигательного аппарата (ОДА)?</h3>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>Да, принципы CONTEXTMOTION могут быть полезны при работе с патологиями ОДА, включая сколиоз, плоскостопие, артрозы, остеохондроз и т.д.</p>
+              <p><strong>Важно подчеркнуть:</strong> система не заменяет основное лечение, назначенное врачом, — она дополняет и расширяет реабилитационную программу.</p>
+              <p><strong>Как это работает:</strong></p>
+              <ul>
+                <li>помогает анализировать индивидуальные двигательные сценарии клиента и выявлять зоны перегрузки;</li>
+                <li>позволяет подбирать упражнения с учётом специфики патологии и текущего состояния;</li>
+                <li>учит перераспределять нагрузку, снижая давление на проблемные зоны;</li>
+                <li>способствует формированию более безопасных и эффективных двигательных паттернов.</li>
+              </ul>
+              <p>В результате применение CONTEXTMOTION может значительно повысить эффективность реабилитации, но всегда — в рамках согласованного с врачом плана восстановления.</p>
+            </div>
+          </div>
+
+          <!-- Вопрос 11 -->
+          <!-- <div class="faq-item">
+            <div class="faq-question">
+              <span class="faq-number">11</span>
+              <h3>Как начать обучение?</h3>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>Запишитесь на вводный модуль — он бесплатный и знакомит с основными принципами CONTEXTMOTION. Далее можно выбрать полный курс или отдельные тематические блоки.</p>
+              <a href="#contact" class="faq-cta">Записаться на вводный модуль</a>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="footer">
+    <div class="footer-container">
+      <!-- Контактная информация -->
+      <div class="footer-content">
+        <div class="footer-contacts">
+          <a href="tel:+79164185868" class="footer-contact-link">
+            Телефон: +7 (916) 418-58-68
+          </a>
+          <a href="mailto:info@contextmotion.ru" class="footer-contact-link">
+            Электронная почта: info@contextmotion.ru
+          </a>
+        </div>
+
+        <!-- Социальные сети -->
+        <div class="footer-socials">
+          <a href="https://t.me/dr_yuryharlamov" class="footer-social-link" aria-label="Telegram">
+            <i class="bi bi-telegram"></i>
+          </a>
+          <a href="#" class="footer-social-link" aria-label="WhatsApp">
+            <i class="bi bi-whatsapp bi-2x"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Копирайт -->
+      <div class="footer-bottom">
+        <p>© 2026 ContextMotion. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Прокрутка вверх по логотипу
+    document.querySelector('.scroll-link').addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+
+    // Бургер-меню
+    const burgerBtn = document.querySelector('.burger-btn');
+    const nav = document.querySelector('.nav');
+    const body = document.body;
+
+    burgerBtn.addEventListener('click', () => {
+      burgerBtn.classList.toggle('active');
+      nav.classList.toggle('active');
+      body.classList.toggle('menu-open');
+      
+      const isOpen = nav.classList.contains('active');
+      burgerBtn.setAttribute('aria-label', isOpen ? 'Закрыть меню' : 'Открыть меню');
+    });
+
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        burgerBtn.classList.remove('active');
+        nav.classList.remove('active');
+        body.classList.remove('menu-open');
+        burgerBtn.setAttribute('aria-label', 'Открыть меню');
+      });
+    });
+
+    nav.addEventListener('click', (e) => {
+      if (e.target === nav) {
+        burgerBtn.classList.remove('active');
+        nav.classList.remove('active');
+        body.classList.remove('menu-open');
+        burgerBtn.setAttribute('aria-label', 'Открыть меню');
+      }
+    });
+
+
+    // АНИМАЦИЯ ДЛЯ "О ПРОЕКТЕ"
+    const platformText = document.querySelector('.platform-text');
+    const platformImage = document.querySelector('.platform-image');
+    const advantagesGrid = document.querySelector('.advantages-grid');
+
+    const platformObserverOptions = {
+      threshold: 0.2,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const platformObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          // Текст появляется первым
+          if (entry.target === platformText) {
+            platformText.classList.add('visible');
+          }
+          // Фото появляется с задержкой
+          if (entry.target === platformImage) {
+            setTimeout(() => {
+              platformImage.classList.add('visible');
+            }, 200);
+          }
+          // Преимущества появляются после текста и фото
+          if (entry.target === advantagesGrid) {
+            setTimeout(() => {
+              advantagesGrid.classList.add('visible');
+            }, 400);
+          }
+        }
+      });
+    }, platformObserverOptions);
+
+    if (platformText) platformObserver.observe(platformText);
+    if (platformImage) platformObserver.observe(platformImage);
+    if (advantagesGrid) platformObserver.observe(advantagesGrid);
+
+
+    // ---------- ДЛЯ КОГО --------------
+    const forWhomCards = document.querySelectorAll('.for-whom-card');
+
+    const forWhomObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.15,
+      rootMargin: '0px 0px -50px 0px'
+    });
+
+    forWhomCards.forEach(card => {
+      forWhomObserver.observe(card);
+    });
+
+    // === АНИМАЦИЯ КАРТОЧЕК НАПРАВЛЕНИЙ ===
+    const directionCards = document.querySelectorAll('.direction-card');
+
+    const directionObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            entry.target.classList.add('visible');
+          }, index * 200);
+        }
+      });
+    }, {
+      threshold: 0.2,
+      rootMargin: '0px 0px -50px 0px'
+    });
+
+    directionCards.forEach(card => {
+      directionObserver.observe(card);
+    });
+
+    // === МОДАЛЬНЫЕ ОКНА ===
+    const modals = document.querySelectorAll('.modal');
+    const modalTriggers = document.querySelectorAll('.direction-btn');
+    const modalCloseBtns = document.querySelectorAll('.modal-close');
+    // Открытие модального окна
+    modalTriggers.forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const modalId = trigger.getAttribute('data-modal');
+        const modal = document.getElementById(modalId);
+        if (modal) {
+          modal.classList.add('open');
+          body.classList.add('modal-open');
+        }
+      });
+    });
+
+    // Закрытие модального окна
+    modalCloseBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const modal = btn.closest('.modal');
+        if (modal) {
+          modal.classList.remove('open');
+          body.classList.remove('modal-open');
+        }
+      });
+    });
+
+    // Закрытие при клике на фон
+    document.querySelectorAll('.modal-overlay').forEach(overlay => {
+      overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) {
+          const modal = overlay.closest('.modal');
+          if (modal) {
+            modal.classList.remove('open');
+            body.classList.remove('modal-open');
+          }
+        }
+      });
+    });
+
+    // Закрытие при нажатии ESC
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        modals.forEach(modal => {
+          modal.classList.remove('open');
+          body.classList.remove('modal-open');
+        });
+      }
+    });
+
+    // === КАРУСЕЛЬ ===
+    const track = document.getElementById('carouselTrack');
+    const slides = track.querySelectorAll('.carousel-slide');
+    const dots = document.querySelectorAll('.dot');
+    const prevBtn = document.getElementById('carouselPrev');
+    const nextBtn = document.getElementById('carouselNext');
+
+    let currentIndex = 0;
+    const totalSlides = slides.length;
+    let autoPlayInterval;
+
+    // Обновление карусели
+    function updateCarousel(index) {
+      // Обновляем позицию
+      track.style.transform = `translateX(-${index * 100}%)`;
+      
+      // Обновляем индикаторы
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === index);
+      });
+      
+      currentIndex = index;
+    }
+
+    // Переключение на следующий слайд
+    function nextSlide() {
+      const nextIndex = (currentIndex + 1) % totalSlides;
+      updateCarousel(nextIndex);
+    }
+
+    // Переключение на предыдущий слайд
+    function prevSlide() {
+      const prevIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+      updateCarousel(prevIndex);
+    }
+
+    // Клик по индикаторам
+    dots.forEach(dot => {
+      dot.addEventListener('click', () => {
+        const index = parseInt(dot.dataset.index);
+        updateCarousel(index);
+        resetAutoPlay();
+      });
+    });
+
+    // Кнопки навигации
+    nextBtn.addEventListener('click', () => {
+      nextSlide();
+      resetAutoPlay();
+    });
+
+    prevBtn.addEventListener('click', () => {
+      prevSlide();
+      resetAutoPlay();
+    });
+
+    // Автопрокрутка
+    function startAutoPlay() {
+      autoPlayInterval = setInterval(nextSlide, 5000);
+    }
+
+    function resetAutoPlay() {
+      clearInterval(autoPlayInterval);
+      startAutoPlay();
+    }
+
+    // Запуск автопрокрутки
+    startAutoPlay();
+
+    // Остановка автопрокрутки при наведении
+    const carousel = document.querySelector('.about-carousel');
+    carousel.addEventListener('mouseenter', () => {
+      clearInterval(autoPlayInterval);
+    });
+
+    carousel.addEventListener('mouseleave', () => {
+      startAutoPlay();
+    });
+
+    // Свайп для мобильных
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    carousel.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+    });
+
+    carousel.addEventListener('touchend', (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      handleSwipe();
+    });
+
+    function handleSwipe() {
+      const swipeThreshold = 50;
+      const diff = touchStartX - touchEndX;
+      
+      if (Math.abs(diff) > swipeThreshold) {
+        if (diff > 0) {
+          nextSlide();
+        } else {
+          prevSlide();
+        }
+        resetAutoPlay();
+      }
+    }
+
+    // === FAQ АККОРДЕОН ===
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+      const question = item.querySelector('.faq-question');
+      
+      question.addEventListener('click', () => {
+        const isActive = item.classList.contains('active');
+        
+        // Закрываем все другие открытые вопросы
+        faqItems.forEach(otherItem => {
+          if (otherItem !== item) {
+            otherItem.classList.remove('active');
+          }
+        });
+        
+        // Переключаем текущий
+        if (isActive) {
+          item.classList.remove('active');
+        } else {
+          item.classList.add('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
