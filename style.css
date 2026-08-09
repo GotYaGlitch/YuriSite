@@ -403,7 +403,7 @@ body {
   top: 28px;
   width: 16px;
   height: 16px;
-  background: #f0dc82;
+  background: white;
   border-radius: 50%;
   flex-shrink: 0;
 }
