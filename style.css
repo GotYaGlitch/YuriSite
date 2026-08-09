@@ -12,13 +12,7 @@ html {
 
 body {
   font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-  background: linear-gradient(
-    to bottom,
-    #ffffff 0%,
-    #ffffff 2%,
-    #FAEBD7 70%,
-    #FAEBD7 100%
-  );
+  background:#FAEBD7;
   color: #0b1b2f;
   line-height: 1.5;
   padding-top: 80px;
