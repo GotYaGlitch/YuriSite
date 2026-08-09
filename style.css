@@ -1546,7 +1546,7 @@ body.modal-open {
   .modal-image {
     position: relative;
     min-height: 200px;
-    height: 200px;
+    height: 400px;
     top: 0;
   }
 
@@ -1832,7 +1832,7 @@ body.modal-open {
 
   .modal-image {
     min-height: 160px;
-    height: 160px;
+    height: 240px;
   }
 
   .modal-image img {
