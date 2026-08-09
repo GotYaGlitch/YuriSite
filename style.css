@@ -1550,6 +1550,10 @@ body.modal-open {
     top: 0;
   }
 
+  .modal-image img {
+    object-position: center 50%;
+  }
+
   .modal-text {
     max-height: none;
     padding: 24px 24px 32px;
@@ -1829,6 +1833,10 @@ body.modal-open {
   .modal-image {
     min-height: 160px;
     height: 160px;
+  }
+
+  .modal-image img {
+    object-position: center 38%;
   }
 
   .modal-text {
