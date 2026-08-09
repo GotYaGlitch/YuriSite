@@ -12,16 +12,21 @@ html {
 
 body {
   font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-  background: linear-gradient(
-    to bottom,
-    #ffffff 0%,
-    #ffffff 2%,
-    #FAEBD7 100%
-  );
+  background: #FAEBD7;
   color: #0b1b2f;
   line-height: 1.5;
   padding-top: 80px;
   overflow-x: hidden;
+}
+
+.phantom-block {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #ffffff;
+  z-index: 999;
 }
 
 /* ФИКСИРОВАННЫЙ HEADER */
