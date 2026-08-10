@@ -268,7 +268,6 @@ body {
   background: #FAEBD7;
   padding: 60px 24px;
   scroll-margin-top: 90px;
-  overflow: hidden;
 }
 
 .about-platform-container {
@@ -464,6 +463,7 @@ body {
 /* ===================== ДЛЯ КОГО ================================ */
 .for-whom-section {
   scroll-margin-top: 90px;
+  background: #FAEBD7;
 }
 
 .for-whom-container {
